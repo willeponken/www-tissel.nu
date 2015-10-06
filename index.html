@@ -4,16 +4,17 @@
     <title>TSR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="mediaelementplayer.css" />
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
   </head>
 
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
 
-        <a href="#" class="navbar-brand">TSR - Tissel Studentradio</a>
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand"><img src="/assets/img/logotype-navbar.png" /><strong>TSR - Tissel Studentradio</strong></a>
+        </div>
 
         <button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
           <span class="icon-bar"></span>
@@ -24,33 +25,18 @@
         <div class="collapse navbar-collapse navHeaderCollapse">
 
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Hem</a></li>
+            <li class="active"><a href="/">Hem</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Program <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="LeifGW.html">GW löser</a></li>
-                <li><a href="under-tacket.html">Under täcket med Richard</a></li>
-                <li><a href="#">Jens - din guide i livet</a></li>
-                <li><a href="#">Fest fredag</a></li>
+                <li><a href="/program/leif-gw">GW löser</a></li>
+                <li><a href="/program/under-tacket">Under täcket med Richard</a></li>
+                <li><a href="/program/jens-din-guide-i-livet">Jens - din guide i livet</a></li>
+                <li><a href="/program/fest-fredag">Fest fredag</a></li>
               </ul>
             </li>
-            <li><a href="om.html">Om oss</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li>
-              <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-              <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
-                <div class="jp-type-single">
-                  <div class="jp-gui jp-interface">
-                    <div class="jp-controls-holder">
-                      <div class="jp-controls">
-                        <button type="button" class="jp-play btn btn-default navbar-btn" aria-label="Play" role="button" tabindex="0"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
-                        <button type="button" class="jp-stop btn btn-default navbar-btn" aria-label="Stop" role="button" tabindex="0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
+            <li><a href="/om">Om oss</a></li>
+            <li><a href="/kontakt">Kontakt</a></li>
           </ul>
 
         </div>
@@ -60,11 +46,25 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <a class="twitter-timeline" href="https://twitter.com/TisselRadio" data-widget-id="648896430665506816">Jävla skit-Twitter laddar, ha tålamod.</a>
-        </div>
-        <div class="col-md-6">
 
+        <div class="col-sm-2">
+          <h2>Lyssna!</h2>
+          <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+          <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+            <div class="jp-type-single">
+              <div class="jp-gui jp-interface">
+                <div class="jp-controls-holder">
+                  <div class="jp-controls">
+                    <button type="button" class="jp-play btn btn-default navbar-btn" aria-label="Play" role="button" tabindex="0"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+                    <button type="button" class="jp-stop btn btn-default navbar-btn" aria-label="Stop" role="button" tabindex="0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6">
           <h1>Tissel Studentradio</h1>
           <p>
           Halloj alla sexiga mädchen, tyvärr är hemsidan fortfarande under uppbyggnad. Men ni kan fortfarande ta och trycka på <span class="glyphicon glyphicon-play"></span> och njuta till alla de vackra tonerna!
@@ -72,9 +72,29 @@
           <p>
           Vi är igång med ett premiärprogram på söndag, mer information kommer.
           </p>
-
+          <h3>Vad folk säger om oss</h3>
+          <blockquote>
+            <p>Helt dumma i huvudet, ett gäng psykopater...</p>
+            <footer>Fanny "Phösarinna" Bergerstam</footer>
+          </blockquote>
+          <blockquote>
+            <p>Just nu har jag lagt min ordlista i en separat definition.</p>
+            <footer>Joel Bovin</footer>
+          </blockquote>
+          <blockquote>
+            <p>Asså, jag hade ju inte tackat nej till en gratis öl just nu.</p>
+            <footer>Jonatan "Phösaren" Olsson</footer>
+          </blockquote>
+          <blockquote>
+            <p>Va?</p>
+            <footer>Alexander "PhösarN'" Hedberg</footer>
+          </blockquote>
         </div>
-        <div class="col-md-3"></div>
+        
+        <div class="col-sm-4">
+          <a class="twitter-timeline" href="https://twitter.com/TisselRadio" data-widget-id="648896430665506816">Jävla skit-Twitter laddar, ha tålamod.</a>
+        </div>
+     
       </div>
     </div>
 
@@ -82,8 +102,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.swf"></script>
-    <script src="js/audioplayer.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="/assets/js/audioplayer.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
 
 
   </body>
