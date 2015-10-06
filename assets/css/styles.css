@@ -14,7 +14,13 @@ body {
 }
 
 .navbar-brand {
-
   padding: 12px;
+}
 
+.navbar-header {
+  display: inline-block;
+}
+
+.navbar-toggle {
+  float: right;
 }
