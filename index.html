@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mediaelementplayer.css" />
     <link href="css/styles.css" rel="stylesheet">
   </head>
 
@@ -35,6 +36,21 @@
             </li>
             <li><a href="#">Om oss</a></li>
             <li><a href="#">Kontakt</a></li>
+            <li>
+            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+          <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+            <div class="jp-type-single">
+              <div class="jp-gui jp-interface">
+                <div class="jp-controls-holder">
+                  <div class="jp-controls">
+                    <button type="button" class="jp-play btn btn-default navbar-btn" aria-label="Play" role="button" tabindex="0"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+                    <button type="button" class="jp-stop btn btn-default navbar-btn" aria-label="Stop" role="button" tabindex="0"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            </li>
           </ul>
 
         </div>
@@ -45,15 +61,28 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <a class="twitter-timeline" href="https://twitter.com/TisselRadio" data-widget-id="648896430665506816">Tweets by @TisselRadio</a>
+          <a class="twitter-timeline" href="https://twitter.com/TisselRadio" data-widget-id="648896430665506816">Jävla skit-Twitter laddar, ha tålamod.</a>
         </div>
-        <div class="col-md-6">Hejhej</div>
-        <div class="col-md-3">Hejhejhej</div>
+        <div class="col-md-6">
+
+          <h1>Tissel Studentradio</h1>
+          <p>
+          Halloj alla sexiga mädchen, tyvärr är hemsidan fortfarande under uppbyggnad. Men ni kan fortfarande ta och trycka på <span class="glyphicon glyphicon-play"></span> och njuta till alla de vackra tonerna!
+          </p>
+          <p>
+          Vi är igång med ett premiärprogram på söndag, mer information kommer.
+          </p>
+
+        </div>
+        <div class="col-md-3"></div>
       </div>
     </div>
 
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.swf"></script>
+    <script src="js/audioplayer.js"></script>
     <script src="js/bootstrap.js"></script>
 
 
