@@ -24,3 +24,11 @@ body {
 .navbar-toggle {
   float: right;
 }
+
+.rightborder {
+    border-right: 3px solid #ccc;
+}
+
+.leftborder {
+    border-left: 3px solid #ccc;
+}
