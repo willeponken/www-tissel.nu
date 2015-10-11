@@ -1,4 +1,6 @@
-<html><head>
+﻿<!DOCTYPE html>
+<html>
+  <head>
     <title>TSR - Tissel Studentradio</title>
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -7,18 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/airtime-widgets/css/airtime-widgets.css" type="text/css">
     <link href="/assets/css/styles.css" rel="stylesheet">
-  <script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/timeline.81f4eb49b8068477a9d87b7879146e69.js"></script></head>
+  </head>
 
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
 
         <div class="navbar-header">
-          <a href="/" class="navbar-brand"><img src="/assets/img/logotype-navbar.png"><strong>Tissel Studentradio</strong></a>
+          <a href="/" class="navbar-brand"><img src="/assets/img/logotype-navbar.png" /><strong>Tissel Studentradio</strong></a>
         </div>
 
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+        <button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -52,7 +55,7 @@
 
         <div class="col-sm-2">
           <h2>Lyssna!</h2>
-          <div id="jquery_jplayer_1" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0" preload="metadata" src="http://radio.tissel.nu/low.mp3" title="Tissel Studentradio"></audio></div>
+          <div id="jquery_jplayer_1" class="jp-jplayer"></div>
           <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
             <div class="jp-type-single">
               <div class="jp-gui jp-interface">
@@ -68,43 +71,41 @@
         </div>
 
         <div class="col-sm-6 leftborder rightborder">
-          <h1>Tissel Studentradio</h1>
-          <p>
-          Halloj alla sexiga mädchen, tyvärr är hemsidan fortfarande under uppbyggnad. Men ni kan fortfarande ta och trycka på <span class="glyphicon glyphicon-play"></span> och njuta till alla de vackra tonerna!
-          </p>
-          <p>
-          Vi ��r igång med ett premiärprogram på söndag, mer information kommer.
-          </p>
-          <h3>Vad folk säger om oss</h3>
-          <blockquote>
-            <p>Helt dumma i huvudet, ett gäng psykopater...</p>
-            <footer>Fanny "Phösarinna" Bergerstam</footer>
-          </blockquote>
-          <blockquote>
-            <p>Just nu har jag lagt min ordlista i en separat definition.</p>
-            <footer>Joel Bovin</footer>
-          </blockquote>
-          <blockquote>
-            <p>Asså, jag hade ju inte tackat nej till en gratis öl just nu.</p>
-            <footer>Jonathan "Phösaren" Olsson</footer>
-          </blockquote>
-          <blockquote>
-            <p>Va?</p>
-            <footer>Alexander "PhösarN'" Hedberg</footer>
-          </blockquote>
+          <h1>Kalender</h1>
+          <div id="scheduleTabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all"></div>
         </div>
 
         <div class="col-sm-3">
-          <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; height: 700px; padding: 0px; border: none; max-width: 520px; min-width: 180px; min-height: 200px; margin-top: 0px; margin-bottom: 0px;" data-widget-id="648896430665506816" data-user-id="3805716795" title="Twitter Timeline"></iframe>
+          <a class="twitter-timeline" href="https://twitter.com/TisselRadio" data-widget-id="648896430665506816">Jävla skit-Twitter laddar, ha tålamod. Förutom ifall du lider av paranoia och har no-script...</a>
         </div>
 
       </div>
     </div>
 
-    <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.swf"></script>
+    <script src="/assets/airtime-widgets/js/jquery-ui-1.8.10.custom.min.js" type="text/javascript"></script>
+    <script src="/assets/airtime-widgets/js/jquery.showinfo.js" type="text/javascript"></script>
+    <script>    
+$(document).ready(function() {
+  $("#scheduleTabs").airtimeWeekSchedule({
+    sourceDomain:"http://radio.tissel.nu:8000",
+    dowText:{monday:"M\&aring;ndag", tuesday:"Tisdag", wednesday:"Onsdag", thursday:"Torsdag", friday:"Fredag", saturday:"L\&ouml;rdag", sunday:"\&Aring;ngest", nextmonday: "N\&auml;sta m\&aring;ndag", nexttuesday: "N\&auml;sta tisdag", nextwednesday: "N\&auml;sta onsdag", nextthursday: "N\&auml;sta torsdag" },
+    miscText:{time:"Tid", programName:"Program", details:"Detaljer", readMore:"L\&auml;s mer"},
+    updatePeriod: 600 //seconds
+  });
+  var d = new Date().getDay();
+  $('#scheduleTabs').tabs({selected: d === 0 ? 6 : d-1, fx: { opacity: 'toggle' }});
+});
+    </script>
     <script src="/assets/js/audioplayer.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
-</body></html>
+
+
+  </body>
+
+
+
+</html>
