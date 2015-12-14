@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top shadoww">
       <div class="container">
 
         <div class="navbar-header">
@@ -31,15 +31,6 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/">Hem</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Program <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="/program/leif-gw">GW löser</a></li>
-                <li><a href="/program/under-tacket">Under täcket med Richard</a></li>
-                <li><a href="/program/jens-din-guide-i-livet">Jens - din guide i livet</a></li>
-                <li><a href="/program/fest-fredag">Fest fredag</a></li>
-              </ul>
-            </li>
             <li class="active"><a href="/kalender">Kalender</a></li>
             <li><a href="/om">Om oss</a></li>
             <li><a href="/kontakt">Kontakt</a></li>
@@ -54,7 +45,14 @@
       <div class="row">
 
         <div class="col-sm-3">
-          <h2>Lyssna!</h2>
+
+          <div class="w3-card-4 space">
+            <header class="w3-container w3-blue">
+              <h4>Lyssna</h4>
+            </header>
+            <div class="w3-container">
+
+        <center>
           <div id="jquery_jplayer_1" class="jp-jplayer"></div>
           <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
             <div class="jp-type-single">
@@ -68,10 +66,32 @@
               </div>
             </div>
           </div>
+          <a href="http://radio.tissel.nu/low.mp3" target="_blank">Öppna i eget fönster</a>
+        </center>
+      </div>
+    </div>
+
+        <div class="w3-card-4 space">
+          <header class="w3-container w3-blue space">
+            <h4>Idag</h4>
+          </header>
+          <div class="w3-container">
+              <p>12:00 - 13:00  Jens epa timma</p>
+              <p>14:00 - 15:00  Edvilicious</p>
+              <p>18:00 - 19:00  Willicious</p>
+              <p>20:00 - 21:00  GW:s godingar</p>
+              <p>21:00 - 22:00  Late night rock'n roll</p>
+          </div>
+        </div>
+
         </div>
 
         <div class="col-sm-6 leftborder rightborder">
-          <h1>Kalender</h1>
+          <div class="w3-card-4 space">
+            <header class="w3-container w3-blue">
+              <center><h4>Kalender</h4></center>
+            </header>
+          </div>
           <!-- Den utkommentrade koden är den gammla kalendern, dvs. airtime kalendern -->
             <!--<div id="scheduleTabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all"></div>-->
 
@@ -79,7 +99,19 @@
         </div>
 
         <div class="col-sm-3">
-          <a class="twitter-timeline" href="https://twitter.com/TisselRadio" data-widget-id="648896430665506816">Jävla skit-Twitter laddar, ha tålamod. Förutom ifall du lider av paranoia och har no-script...</a>
+
+            <div class="w3-card-4 space">
+
+              <header class="w3-container w3-blue">
+                <h4>Twitter</h4>
+              </header>
+
+              <div class="w3-container">
+          <center>
+            <a class="twitter-timeline" href="https://twitter.com/TisselRadio" data-widget-id="648896430665506816">Jävla skit-Twitter laddar, ha tålamod. Förutom ifall du lider av paranoia och har no-script...</a>
+          </center>
+        </div>
+      </div>
         </div>
 
       </div>

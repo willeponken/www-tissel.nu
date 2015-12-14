@@ -30,7 +30,7 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="/">Hem</a></li>
-            <li class="dropdown">
+            <!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Program <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="/program/leif-gw">GW löser</a></li>
@@ -38,7 +38,7 @@
                 <li><a href="/program/jens-din-guide-i-livet">Jens - din guide i livet</a></li>
                 <li><a href="/program/fest-fredag">Fest fredag</a></li>
               </ul>
-            </li>
+            </li>-->
             <li><a href="/kalender">Kalender</a></li>
             <li><a href="/om">Om oss</a></li>
             <li><a href="/kontakt">Kontakt</a></li>
@@ -53,13 +53,13 @@
       <div class="row">
 
         <div class="col-sm-3">
-<!--
-          <div class="w3-card-4">
-            <header class="w3-container w3-black">
-              <center><h3>Lyssna</h3></center>
+
+          <div class="w3-card-4 space">
+            <header class="w3-container w3-blue">
+              <h4>Lyssna</h4>
             </header>
-          </div>
-        -->
+            <div class="w3-container">
+
         <center>
           <div id="jquery_jplayer_1" class="jp-jplayer"></div>
           <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
@@ -76,55 +76,35 @@
           </div>
           <a href="http://radio.tissel.nu/low.mp3" target="_blank">Öppna i eget fönster</a>
         </center>
+      </div>
+    </div>
+
+        <div class="w3-card-4 space">
+          <header class="w3-container w3-blue space">
+            <h4>Idag</h4>
+          </header>
+          <div class="w3-container">
+              <p>12:00 - 13:00  Jens epa timma</p>
+              <p>14:00 - 15:00  Edvilicious</p>
+              <p>18:00 - 19:00  Willicious</p>
+              <p>20:00 - 21:00  GW:s godingar</p>
+              <p>21:00 - 22:00  Late night rock'n roll</p>
+          </div>
+        </div>
+
         </div>
 
         <div class="col-sm-6 leftborder rightborder">
-<!--
-          <div class="w3-card-4">
-            <header class="w3-container w3-black">
-              <center><h3>Nyheter</h3></center>
-            </header>
-          </div>-->
 
-          <br>
-
-          <div class="w3-card-4">
-
+          <div class="w3-card-4 space">
             <header class="w3-container w3-blue">
-              <h4>Kontinuitet</h4>
+              <center><h4>Nyheter</h4></center>
             </header>
-
-            <div class="w3-container">
-              <p>
-                <img src="assets/img/logotype-navbar.png" width="20px" alt="hej" class="img-circle">
-                Kontinuitet är något vi på TSR vet är viktigt för våra lyssnare. Därför kommer vi nu att sända mer regelbundet med start 10:e januari
-                varje söndag. Ni kan se fram emot fräsht snack varje söndag med andra ord.
-                <br>
-                PS: Vår Android och Windows app är snart färdiga. Den kommer att göra det lättare för er att lyssna och komma i kontakt med oss.
-              </p>
-            </div>
-
           </div>
 
           <br>
-          <br>
-
-          <div class="w3-card-4">
-
-            <header class="w3-container w3-blue">
-              <h4>Nu är vi igång</h4>
-            </header>
-
-            <div class="w3-container">
-              <p>
-                <img src="assets/img/logotype-navbar.png" width="20px" alt="hej" class="img-circle">Halloj alla sexiga mädchen, tyvärr är hemsidan fortfarande '
-                under uppbyggnad. Men ni kan fortfarande ta och trycka på
-                <span class="glyphicon glyphicon-play"></span> och njuta till
-                alla de vackra tonerna!</p>
-            </div>
-
-          </div>
-
+          <!-- HÄR NEDAN POSTAS ALLA UPPDATERINGAR -->
+          <div class="vspace">
           <h4>Ett kortare uppehåll</h4>
           <h5>13/12/2015</h5>
             <p>
@@ -135,7 +115,7 @@
             <br>
             <br>
 
-          <h3>Program varje söndag</h3>
+          <h4>Program varje söndag</h4>
           <h5>09/12/2015</h5>
             <p>
               <img src="assets/img/logotype-navbar.png" width="20px" alt="hej" class="img-circle">
@@ -148,7 +128,7 @@
           <br>
           <br>
 
-          <h3>Nu är vi igång</h3>
+          <h4>Nu är vi igång</h4>
           <h5>02/09/2015</h5>
             <p>
               <img src="assets/img/logotype-navbar.png" width="20px" alt="hej" class="img-circle">
@@ -157,18 +137,23 @@
 
             <br>
             <br>
-
+          </div>
         </div>
 
         <div class="col-sm-3">
 
-        <!--  <div class="w3-card-4">
-            <header class="w3-container w3-black">
-              <center><h3>Socialt</h3></center>
-            </header>
-          </div>-->
+            <div class="w3-card-4 space">
 
-          <a class="twitter-timeline" href="https://twitter.com/TisselRadio" data-widget-id="648896430665506816">Jävla skit-Twitter laddar, ha tålamod. Förutom ifall du lider av paranoia och har no-script...</a>
+              <header class="w3-container w3-blue">
+                <h4>Twitter</h4>
+              </header>
+
+              <div class="w3-container">
+          <center>
+            <a class="twitter-timeline" href="https://twitter.com/TisselRadio" data-widget-id="648896430665506816">Jävla skit-Twitter laddar, ha tålamod. Förutom ifall du lider av paranoia och har no-script...</a>
+          </center>
+        </div>
+      </div>
         </div>
 
       </div>

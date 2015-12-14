@@ -1,7 +1,7 @@
 body {
   margin-top: 70px;
+  background-color: #f2f2f2;
 }
-
 .navbar-brand > img {
 
   margin-top: -6px;
@@ -53,4 +53,11 @@ body {
 }
 .shadoww{
   box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+.space{
+  margin-top: 20px;
+}
+.vspace{
+  margin-left: 10px;
+  margin-right: 10px;
 }
