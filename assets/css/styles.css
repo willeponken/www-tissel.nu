@@ -42,3 +42,15 @@ body {
   margin-top: 120px;
   margin-right: 85px;
 }
+
+.w3-container{padding:0.01em 16px
+}
+.w3-blue{color:#fff !important;background-color:#333 !important
+}
+.w3-black{color:#fff !important;background-color:#191919 !important
+}
+.w3-card-4{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important
+}
+.shadoww{
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
