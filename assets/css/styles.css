@@ -57,6 +57,9 @@ body {
 .space{
   margin-top: 20px;
 }
+.bottomspace{
+  margin-bottom: 30px;
+}
 .vspace{
   margin-left: 10px;
   margin-right: 10px;
